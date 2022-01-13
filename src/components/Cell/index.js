@@ -1,6 +1,9 @@
+import { StyledCell } from "./style"
+import { TETROMINOS } from "../../Tetrominos"
+
 const Cell = ({ type }) => {
     return (
-        <div>Cell</div>
+        <StyledCell type={type} color={TETROMINOS[type].color}></StyledCell>
     )
 }
 

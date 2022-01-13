@@ -1,6 +1,10 @@
-const Display = ({ gameOver, text}) => {
+import { StyledDisplay } from "./style"
+
+const Display = ({ gameOver, text }) => {
     return (
-        <div>{text}</div>
+        <StyledDisplay gameOver={gameOver}>
+            {text}
+        </StyledDisplay>
     )
 }
 
